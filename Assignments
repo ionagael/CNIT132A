@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Philip Burkart CNIT 132</title>
+        <meta name="description" content="Assignment">
+        <meta charset="utf-8">
+       
+        <!-- Site created by Phil Burkart on February 23, 2021 -->
+        
+</head>
+<body>
+    </head>
+    <body style="background-color:rgb(235, 235, 235);">
+        <header>Philip Burkart CNIT 132</header>
+        
+        <ul>
+            <a href="https://ionagael.github.io/CNIT132/">Home</a>
+            <a href="https://ionagael.github.io/CNIT132/Assignments">Assignments</a>            
+            <li>MeetUp</li>
+            <li>Contact</li>
+        </ul>
+        </aside>
+        <footer>
+        </footer>
+    </body>
+</html>
