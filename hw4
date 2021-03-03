@@ -32,7 +32,10 @@ body {
 
       <footer>
         <figure>
-            
+                    <ul>
+            <li><a href="homework.html">Homework</a></li>
+        </ul>
+   
           </figure>
        
         </footer>
