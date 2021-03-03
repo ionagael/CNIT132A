@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <title>Lincoln Elementary School</title>
+        <meta name="description" content="Lincoln Elementary School">
+        <meta charset="utf-8">
+<style>
+body {
+ background-image: url("student.jpg"), url("elementarystudent.png");
+ background-repeat: no-repeat;
+ background-position: bottom right, left top;
+ background-color: #cccccc;
+}
+</style>
+    </head>
+    
+    <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <header>Phil Burkart CNIT 132</header>  
+            <h1 style="color:blue;">Lincoln Elementary School</h1>
+            <p>Welcome to Lincoln Elementary School! Lincoln staff work hard to ensure your child's success. We focus on personalized learning, a safe environment, big data, and fairness for all students. </p>
+   <img src="abe.jpg" alt="Lincoln School Namesake">
+   <figcaption>Lincoln School Namesake</figcaption>
+    </body>
+
+      <footer>
+        <figure>
+            
+          </figure>
+       
+        </footer>
+    </body>
+</html>
