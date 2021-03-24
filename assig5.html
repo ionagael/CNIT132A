@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CNIT-132 - Assignment 5</title>
+<meta name="description" content="Exercise to use external CSS and make sure that the page has a valid HTML5 code">
+<meta charset="utf-8">
+    <style>
+        body {background-color:#CCFFFF;}
+        a:link {color: white;}
+        h1 {color: #330066;
+            text-align: center;
+}
+   
+        h2 {color: blue;
+            text-align: center;
+}
+        
+        h3 {text-align: center;
+            letter-spacing:5px;
+}
+        p::first-letter {
+            font-size: 250%;
+            font-weight: bold;
+            font-style: italic;
+            color:#990000;
+        }
+        #wrapper {
+            width: 85%;
+            margin: 0 auto;
+            border:2px solid blue;
+            background-color:#FFF;
+            padding:10px 5px 0;  
+            min-width:760px;
+}
+    
+                
+        
+        img {
+            margin-left: auto;
+            width="150"; 
+            height="140";
+            margin-right:20px;
+}
+        
+        footer{background-color:#990000;
+            text-align:center;
+              min-height: 40px;
+            font-size:65%;
+            font-weight:bold;
+            color:white;
+            clear: both;
+        }
+                
+        nav {text-align:center; color: white}
+        nav ul {list-style-type: none; padding: 0;}
+        nav ul li {display: inline-block;
+            margin: 10px;
+            background-color: #990000;
+            color: orangered;
+            text-align: center;
+            border-radius: 10px;
+            width:120px;
+            height:30px;
+            line-height:30px;}
+        nav ul li a {text-decoration: none; font-weight: bold;}
+            
+        #floatleft { margin: 10px;
+             float: left;
+			 text-align:center;
+			 font-size: 70%; 
+}
+    </style>
+</head>
+    
+    <div id="wrapper">
+<body>
+        <h1>City College of San Francisco</h1>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="factulty.html">Faculty</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    
+    <main>
+        <h2>Our Mission</h2>
+        <h3>Learn and Grow</h3>
+        
+<img src="student.jpg" alt="Student" id="floatleft" />
+
+<p>We offer the environment so students can learn, grow and get a job position in the current competitive job market! This is our main mission!</p>
+<p>Our faculty goes through a very intensive process to be hired as we want to offer the best to our students to produce the best!</p>
+<footer>
+    
+<p>
+    _Making our community stronger
+</p>
+        </footer>
+</main>
+</body>
+    </div>
+</html>
