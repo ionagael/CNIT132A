@@ -129,26 +129,12 @@
 }
 /* primary nav */
    
-   
-   
-html, body {
-    margin: 0;
-    height: 100%;
-}
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav" "main" "footer";
-    grid-template-rows: 55px 1fr 80px;
-}
+
 nav {
     background-color: red;
     grid-area: nav;
 }
-main {
-    background-color: pink;
-    grid-area: main;
-}
+
 
 .grid-container {
   display: grid;
@@ -173,22 +159,7 @@ footer {
          grid-template-columns: 1fr 1fr; 
          grid-template-rows: 50vh 50vh; 
       }
-	  .news, .links, .search, .messages {
-	     text-align: center;
-		 font-weight: bold;
-	  }
-	  .news {
-	     background-color: cyan;
-	  }
-	  .links {
-	     background-color: orange;
-	  }
-	  .search {
-	     background-color: violet;
-	  }
-	  .messages {
-	     background-color: red;
-	  }
+
 </style>
 </head>
 
