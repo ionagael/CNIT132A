@@ -2,9 +2,9 @@
 <html lang="en">
 
     <head>
-       <link href=mystyle.css rel=stylesheet>
+
         <title>Philip Burkart CNIT 132A</title>
-        <meta name="description" content="Contact">
+        <meta name="description" content="homework 4 Part 1">
         <meta charset="utf-8">
 	
 	
@@ -20,11 +20,10 @@
         
        
         <!-- Site created by Phil Burkart on August 22, 2022 -->
-        
 <style>
-	
-	
 /* primary nav */
+
+
 
 
 .topnav {
@@ -43,7 +42,7 @@
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: saddlebrown;
   color: white;
 }
 
@@ -131,13 +130,25 @@
 }
 /* primary nav */
    
-   
-   
 
+   
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-rows: 55px 1fr 80px;
+	background-color: #DEB887; 
+	color: #A52A2A; 
+}
 nav {
-    background-color: red;
+
     grid-area: nav;
 }
+
 
 .grid-container {
   display: grid;
@@ -152,9 +163,20 @@ nav {
   font-size: 30px;
   text-align: center;
 }
-footer {
-    background-color: purple;
+footer.bottom {
+
     grid-area: footer;
+	
+	     width: 100%; 
+	     margin: 10px auto; 
+	     padding: 3px 0; 
+	     text-align:center; 
+	     background-color: blue; 
+	     color:white; 
+	     font-size: 0.9rem; 
+	
+	
+	
 }
 
       .page-layout {
@@ -163,6 +185,28 @@ footer {
          grid-template-rows: 50vh 50vh; 
       }
 
+	
+	
+	
+     header.top {
+	     width: 60%; 
+
+	     margin: 0 auto; 
+	     text-align: center; 
+	     border-shadow: 5px 5px 5px gray; 
+	     font-size: 1.5rem; color: black;
+	}
+	
+
+ 
+	 footer img {
+		 float:left; 
+		 margin: 0 5px 5px 0;
+	}
+    h1 {
+  text-align: center;
+}
+   
 </style>
 </head>
 
@@ -172,8 +216,8 @@ footer {
     <!-- top navigation bar -->
 
 <div class="topnav" id="myTopnav">
-  <a href="https://ionagael.github.io/CNIT132A/"> Home</a>
-         <a href="https://ionagael.github.io/CNIT132A/Contact">Contact</a>     
+  <a href="https://ionagael.github.io/CNIT132A/" > Home</a>
+         <a href="https://ionagael.github.io/CNIT132A/Contact"class="active">Contact</a>     
 
   <a href ="https://ionagael.github.io/CNIT132A/Assignments">Assignments</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -184,14 +228,19 @@ footer {
 </nav>
 
         
-    <main><h1>Philip Burkart CNIT 132A Contact</h1>
-    
-      <p>Phone: 516.504.5758</p>
+    <main>
 
- <p>Email: pburkart@ccsf.mail.edu</p>
-  </main>
-      
-    <footer>2022</footer>
+	    
+<h1>Philip Burkart CNIT 132A Contact<br>Phone: 516.504.5758<br>Email: pburkart.ccsf.mail.edu</h1>
+
+
+
+
+
+
+</main>
+    <footer class="bottom">  
+  <h2>Copyright &copy; 2022</h2></footer>
     
                <script>
 function myFunction() {
