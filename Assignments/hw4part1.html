@@ -149,20 +149,6 @@ nav {
     grid-area: nav;
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: blue;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 footer.bottom {
 
     grid-area: footer;
@@ -178,12 +164,6 @@ footer.bottom {
 	
 	
 }
-
-      .page-layout {
-         display: grid; 
-         grid-template-columns: 1fr 1fr; 
-         grid-template-rows: 50vh 50vh; 
-      }
 
 	
 	
@@ -203,13 +183,33 @@ footer.bottom {
 		 float:left; 
 		 margin: 0 5px 5px 0;
 	}
-    h1 {
+
+          .page-layout {
+         display: grid; 
+         grid-template-columns: 1fr 1fr; 
+         grid-template-rows: 50vh 50vh; 
+      }
+	  .news, .links, .search, .messages {
+	     text-align: center;
+		 font-weight: bold;
+	  }
+	  .news {
+	     background-color: cyan;
+	  }
+	  .links {
+	     background-color: orange;
+	  }
+	  .search {
+	     background-color: violet;
+	  }
+	  .messages {
+	     background-color: red;
+	  }
+    
+        h1 {
   text-align: center;
 }
    
-        p {
-  margin-left: 20px;
-}
 </style>
 </head>
 
@@ -231,23 +231,19 @@ footer.bottom {
 </nav>
 
         
-    <main><h1>Philip Burkart CNIT 132A, Homework 3: Working With Images</h1>
+<main><h1>Philip Burkart CNIT 132A, Homework 4 - Part 1</h1>
     
-    
-        <figure>
-  <img src="images/espresso.jpg" alt="espresso" style="width:25%">
-  <figcaption>3024 x 4032, 467 KB</figcaption>
-</figure>
-        
-                <figure>
-  <img src="images/espresso-min.jpg" alt="espresso" style="width:25%">
-  <figcaption>3024 x 4032, 147.1 KB</figcaption>
-</figure>
-        
-        
-        <p>I used <a href="https://imagecompressor.com/">Imagecompressor.com</a> to compress/optimize the image. Due to the waterfall download of a website, I decided to refresh the page to get a more accurate portayal of whether the optimized image downloaded faster. After refreshing, Google Developer Tools showed that the download speed of the optimized image was 0ms whereas the unoptimized image was 1ms.</p>
+    <div class="page-layout">
+  <div class="search">Search</div>
+  <div class="links">Links</div>
 
-  </main>
+  <div class="messages">Messages</div>
+      <div class="news">News</div>
+</div>
+    
+
+
+</main>
     <footer class="bottom">  
   <h2>Copyright &copy; 2022</h2></footer>
     
