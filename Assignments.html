@@ -4,7 +4,7 @@
     <head>
 
         <title>Philip Burkart CNIT 132A</title>
-        <meta name="description" content="homework 5">
+        <meta name="description" content="Assignments">
         <meta charset="utf-8">
 	
 	
@@ -150,6 +150,19 @@ nav {
 }
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: blue;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 footer.bottom {
 
     grid-area: footer;
@@ -166,6 +179,11 @@ footer.bottom {
 	
 }
 
+      .page-layout {
+         display: grid; 
+         grid-template-columns: 1fr 1fr; 
+         grid-template-rows: 50vh 50vh; 
+      }
 
 	
 	
@@ -175,55 +193,13 @@ footer.bottom {
 
 	     margin: 0 auto; 
 	     text-align: center; 
-
+ 
 	     font-size: 1.5rem; color: black;
 	}
-	
 
- 
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: blue;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+       h1 {
   text-align: center;
 }
-footer {
-    background-color: purple;
-    grid-area: footer;
-}
-
-
-
-    
-     body { background-color: #DEB887; color: #A52A2A; }
-     header {width: 60%; background-image: url(https://ionagael.github.io/CNIT132A/images/banner.png); margin: 0 auto; text-align: center; font-size: 1.5rem; color: black;}
-	 div.movies { width: 80%; margin: 0 auto; border: 2px solid #D2691E; padding: 0 10px;}
-     footer {width: 60%; margin: 10px auto; padding: 3px 0; text-align:center; background-color: #A52A2A; color:white; font-size: 0.9rem;}	 
-	 
-    
-    
-    footer img {float:left; margin: 0 5px 5px 0;}
-    
-    
-    
-    h1 {
-  text-align: center;
-}
-    
-    p {
-        color:black;
-    }
-
-    
 </style>
 </head>
 
@@ -236,7 +212,7 @@ footer {
   <a href="https://ionagael.github.io/CNIT132A/" > Home</a>
          <a href="https://ionagael.github.io/CNIT132A/Contact">Contact</a>     
 
-  <a href ="https://ionagael.github.io/CNIT132A/Assignments" class="active">Assignments</a>
+  <a href ="https://ionagael.github.io/CNIT132A/Assignments"class="active">Assignments</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
        
@@ -245,44 +221,19 @@ footer {
 </nav>
 
         
-   <main>
-      	 <h1>Philip Burkart CNIT 132A, Homework 4 - Part 3</h1>
-<header role="banner">
-<h1>Great Movies</h1>
-<h2>Great Directors</h2>
-</header>
-<div itemscope itemtype="http://schema.org/Movie" class="movies">
-    <h3><span itemprop="name">Avatar</span></h3>
-  <p><span itemprop="director">Director: James Cameron (born August 16, 1954)</span></p>
-    <p><span itemprop="genre">Type: Science fiction</span></p>
-  <p><span itemprop="releasedEvent">Release Date: December 18, 2009</span></p>
-</div>
-<div itemscope itemtype="http://schema.org/Movie" class="movies">
-  <h3><span itemprop="name">Star Wars: Episode VII</span></h3>
-  <p><span itemprop="director">Director: J. J. Abrams (born June 27, 1966)</span></p>
-  <p><span itemprop="genre">Type: Science fiction</span></p>
-  <p><span itemprop="releasedEvent">Release Date: December 18, 2015</span></p>
-</div>
-<div itemscope itemtype="http://schema.org/Movie" class="movies">
-  <h3><span itemprop="name">Titanic</span></h3>
-  <p><span itemprop="director">Director: James Cameron (born August 16, 1954)</span></p>
-  <p><span itemprop="genre">Type: Drama</span></p>
-  <p><span itemprop="releasedEvent">Release Date: December 19, 1997</span></p>
-</div>
-<div itemscope itemtype="http://schema.org/Movie" class="movies">
-  <h3><span itemprop="name">Schindler's List</span></h3>
-  <p><span itemprop="director">Director: Steven Spielberg (born December 18, 1946)</span></p>
-  <p><span itemprop="genre">Type: Drama</span></p>
-  <p><span itemprop="releasedEvent">Release Date: December 15, 1993</span></p>
-</div>
-<footer>
-  <img src="https://ionagael.github.io/CNIT132A/images/movielogo.png" alt="Movie Logo">
-  <p>List made by CNIT 132A class at CCSF</p>
-  <p>Copyright &copy; 2017</p>
-</footer>  
-
-    </main>
-    <footer class=bottom>  
+    <main><h1>Philip Burkart CNIT 132A Assignments</h1>
+    
+      <ul>
+            <li>Homework #1: The creation of this website.</li>
+                        <li>Homework #2: Analysis of GA4 dashboard statistics.</li>
+            <li><a href="https://ionagael.github.io/CNIT132A/hw3.html">Homework #3</a></li>
+	    <li><a href="https://ionagael.github.io/CNIT132A/Assignments/hw4part1.html">Homework #4 - Part 1</a></li>
+	      	    <li><a href="https://ionagael.github.io/CNIT132A/Assignments/hw4part2.html">Homework #4 - Part 2</a></li>
+	      	      	    <li><a href="https://ionagael.github.io/CNIT132A/Assignments/hw4part3.html">Homework #4 - Part 3</a></li>
+	      	      	      	    <li><a href="https://ionagael.github.io/CNIT132A/Assignments/hw5.html">Homework #5</a></li>
+        </ul>
+  </main>
+    <footer class="bottom">  
   <h2>Copyright &copy; 2022</h2></footer>
     
                <script>
