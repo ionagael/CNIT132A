@@ -2,9 +2,9 @@
 <html lang="en">
 
     <head>
-       <link href=mystyle.css rel=stylesheet>
+
         <title>Philip Burkart CNIT 132A</title>
-        <meta name="description" content="homework 4 Part 2">
+        <meta name="description" content="homework 4 Part 1">
         <meta charset="utf-8">
 	
 	
@@ -42,7 +42,7 @@
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: saddlebrown;
   color: white;
 }
 
@@ -130,12 +130,56 @@
 }
 /* primary nav */
    
+
    
-   
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-rows: 55px 1fr 80px;
+	background-color: #DEB887; 
+	color: #A52A2A; 
+}
 nav {
-    background-color: red;
+
     grid-area: nav;
 }
+
+
+footer.bottom {
+
+    grid-area: footer;
+	
+	     width: 100%; 
+	     margin: 10px auto; 
+	     padding: 3px 0; 
+	     text-align:center; 
+	     background-color: blue; 
+	     color:white; 
+	     font-size: 0.9rem; 
+	
+	
+	
+}
+
+	
+	
+	
+     header.top {
+	     width: 60%; 
+
+	     margin: 0 auto; 
+	     text-align: center; 
+	     border-shadow: 5px 5px 5px gray; 
+	     font-size: 1.5rem; color: black;
+	}
+	
+
+ 
 
 
 .grid-container {
@@ -168,6 +212,7 @@ h1.hw4part2 {
 background-color: Tomato; 
 flex-grow:1;
 text-align:center;
+    color:black;
 }
 
 footer.LimePieFooter {
@@ -185,6 +230,7 @@ p {
 background-color: LightGreen; 
 flex-grow:1;
 text-align:center;
+        color:white;
  font-weight:bold;
 }
 
@@ -235,7 +281,13 @@ text-align:center;
 
 
 }
-
+    
+        h1.top {
+  text-align: center;
+}
+    
+    
+    
 </style>
 </head>
 
@@ -245,10 +297,10 @@ text-align:center;
     <!-- top navigation bar -->
 
 <div class="topnav" id="myTopnav">
-  <a href="https://ionagael.github.io/CNIT132A/"> Home</a>
+  <a href="https://ionagael.github.io/CNIT132A/" > Home</a>
          <a href="https://ionagael.github.io/CNIT132A/Contact">Contact</a>     
 
-  <a href ="https://ionagael.github.io/CNIT132A/Assignments">Assignments</a>
+  <a href ="https://ionagael.github.io/CNIT132A/Assignments"class="active">Assignments</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
        
@@ -258,7 +310,7 @@ text-align:center;
 
         
     <main>
-	    <h1>Philip Burkart CNIT 132A, Homework 4 - Part 2</h1>
+	    <h1 class="top">Philip Burkart CNIT 132A, Homework 4 - Part 2</h1>
     <header class=TomatoHeader>
  <h1 class="hw4part2">Name of Company</h1>
 </header>
@@ -280,8 +332,8 @@ text-align:center;
 </footer>
 
 </main>
-
-    <footer>2022</footer>
+    <footer class=bottom>  
+  <h2>Copyright &copy; 2022</h2></footer>
     
                <script>
 function myFunction() {
