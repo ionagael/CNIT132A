@@ -15,3 +15,8 @@
 	color: #A52A2A; 
     margin-left:20px
 }
+
+main {
+    background-color: #DEB887;
+    grid-area: main;
+}
