@@ -2,9 +2,9 @@
 <html lang="en">
 
     <head>
-       <link href=mystyle.css rel=stylesheet>
+
         <title>Philip Burkart CNIT 132A</title>
-        <meta name="description" content="homework 4 Part 1">
+        <meta name="description" content="homework 5">
         <meta charset="utf-8">
 	
 	
@@ -42,7 +42,7 @@
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: saddlebrown;
   color: white;
 }
 
@@ -145,13 +145,43 @@ body {
 	color: #A52A2A; 
 }
 nav {
-    background-color: red;
+
     grid-area: nav;
 }
-main {
-    background-color: pink;
-    grid-area: main;
+
+
+footer.bottom {
+
+    grid-area: footer;
+	
+	     width: 100%; 
+	     margin: 10px auto; 
+	     padding: 3px 0; 
+	     text-align:center; 
+	     background-color: blue; 
+	     color:white; 
+	     font-size: 0.9rem; 
+	
+	
+	
 }
+
+
+	
+	
+	
+     header.top {
+	     width: 60%; 
+
+	     margin: 0 auto; 
+	     text-align: center; 
+	     border-shadow: 5px 5px 5px gray; 
+	     font-size: 1.5rem; color: black;
+	}
+	
+
+ 
+
 
 .grid-container {
   display: grid;
@@ -167,52 +197,29 @@ main {
   text-align: center;
 }
 footer {
-
+    background-color: purple;
     grid-area: footer;
-	
-	     width: 60%; 
-	     margin: 10px auto; 
-	     padding: 3px 0; 
-	     text-align:center; 
-	     background-color: #A52A2A; 
-	     color:white; 
-	     font-size: 0.9rem; 
-	
-	
-	
 }
 
-      .page-layout {
-         display: grid; 
-         grid-template-columns: 1fr 1fr; 
-         grid-template-rows: 50vh 50vh; 
-      }
 
-	
-	
-	
-     header {
-	     width: 60%; 
-	     background-image: url(https://ionagael.github.io/CNIT132A/images/banner.png); 
-	     margin: 0 auto; 
-	     text-align: center; 
-	     border-shadow: 5px 5px 5px gray; 
-	     font-size: 1.5rem; color: black;
-	}
-	
-	div { 
-		width: 80%; 
-		margin: 0 auto; 
-		border: 2px solid #D2691E; 
-		padding: 0 10px;
-	}
- 
-	 footer img {
-		 float:left; 
-		 margin: 0 5px 5px 0;
-	}
 
-   
+    
+     body { background-color: #DEB887; color: #A52A2A; }
+     header {width: 60%; background-image: url(https://ionagael.github.io/CNIT132A/images/banner.png); margin: 0 auto; text-align: center; border-shadow: 5px 5px 5px gray; font-size: 1.5rem; color: black;}
+	 div.movies { width: 80%; margin: 0 auto; border: 2px solid #D2691E; padding: 0 10px;}
+     footer {width: 60%; margin: 10px auto; padding: 3px 0; text-align:center; background-color: #A52A2A; color:white; font-size: 0.9rem;}	 
+	 
+    
+    
+    footer img {float:left; margin: 0 5px 5px 0;}
+    
+    
+    
+    h1 {
+  text-align: center;
+}
+
+    
 </style>
 </head>
 
@@ -222,10 +229,10 @@ footer {
     <!-- top navigation bar -->
 
 <div class="topnav" id="myTopnav">
-  <a href="https://ionagael.github.io/CNIT132A/"> Home</a>
+  <a href="https://ionagael.github.io/CNIT132A/" > Home</a>
          <a href="https://ionagael.github.io/CNIT132A/Contact">Contact</a>     
 
-  <a href ="https://ionagael.github.io/CNIT132A/Assignments">Assignments</a>
+  <a href ="https://ionagael.github.io/CNIT132A/Assignments"class="active">Assignments</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
        
@@ -234,44 +241,45 @@ footer {
 </nav>
 
         
-    <main>
-    <header>
-	    
+   <main>
+      	 <h1>Philip Burkart CNIT 132A, Homework 4 - Part 3</h1>
+<header role="banner">
 <h1>Great Movies</h1>
 <h2>Great Directors</h2>
-	    <h3>Philip Burkart CNIT 132A, Homework 5</h3>
 </header>
-<div>
-  <h3>Avatar</h3>
-  <p>Director: James Cameron (born August 16, 1954)</p>
-  <p>Type: Science fiction</p>
-  <p>Release Date: December 18, 2009</p>
+<div itemscope itemtype="http://schema.org/Movie" class="movies">
+    <h3><span itemprop="name">Avatar</span></h3>
+  <p><span itemprop="director">Director: James Cameron (born August 16, 1954)</span></p>
+    <p><span itemprop="genre">Type: Science fiction</span></p>
+  <p><span itemprop="releasedEvent">Release Date: December 18, 2009</span></p>
 </div>
-<div>
-  <h3>Star Wars: Episode VII</h3>
-  <p>Director: J. J. Abrams (born June 27, 1966)</p>
-  <p>Type: Science fiction</p>
-  <p>Release Date: December 18, 2015</p>
+<div itemscope itemtype="http://schema.org/Movie" class="movies">
+  <h3><span itemprop="name">Star Wars: Episode VII</span></h3>
+  <p><span itemprop="director">Director: J. J. Abrams (born June 27, 1966)</span></p>
+  <p><span itemprop="genre">Type: Science fiction</span></p>
+  <p><span itemprop="releasedEvent">Release Date: December 18, 2015</span></p>
 </div>
-<div>
-  <h3>Titanic</h3>
-  <p>Director: James Cameron (born August 16, 1954)</p>
-  <p>Type: Drama</p>
-  <p>Release Date: December 19, 1997</p>
+<div itemscope itemtype="http://schema.org/Movie" class="movies">
+  <h3><span itemprop="name">Titanic</span></h3>
+  <p><span itemprop="director">Director: James Cameron (born August 16, 1954)</span></p>
+  <p><span itemprop="genre">Type: Drama</span></p>
+  <p><span itemprop="releasedEvent">Release Date: December 19, 1997</span></p>
 </div>
-<div>
-  <h3>Schindler's List</h3>
-  <p>Director: Steven Spielberg (born December 18, 1946)</p>
-  <p>Type: Drama</p>
-  <p>Release Date: December 15, 1993</p>
+<div itemscope itemtype="http://schema.org/Movie" class="movies">
+  <h3><span itemprop="name">Schindler's List</span></h3>
+  <p><span itemprop="director">Director: Steven Spielberg (born December 18, 1946)</span></p>
+  <p><span itemprop="genre">Type: Drama</span></p>
+  <p><span itemprop="releasedEvent">Release Date: December 15, 1993</span></p>
 </div>
-
-
-
-</main>
-    <footer>  <img src="https://ionagael.github.io/CNIT132A/images/movielogo.png">
+<footer>
+  <img src="https://ionagael.github.io/CNIT132A/images/movielogo.png">
   <p>List made by CNIT 132A class at CCSF</p>
-  <p>Copyright &copy; 2017</p></footer>
+  <p>Copyright &copy; 2017</p>
+</footer>  
+
+    </main>
+    <footer class=bottom>  
+  <h2>Copyright &copy; 2022</h2></footer>
     
                <script>
 function myFunction() {
