@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <title>Philip Burkart CNIT 132A</title>
-        <meta name="description" content="homework 5">
-        <meta charset="utf-8">
-	  <link rel="stylesheet" href="hw7.css">
-	
-	  <!-- Google tag (gtag.js) -->
+<title>Philip Burkart CNIT 132A</title>
+  
+<meta name="description" content="homework 7">
+<meta charset="utf-8">
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZNFTMH3CC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,8 +18,88 @@
   gtag('config', 'G-6ZNFTMH3CC');
 </script>
         
-       
-        <!-- Site created by Phil Burkart on August 22, 2022 -->
+ <!-- Site created by Phil Burkart on August 22, 2022 -->
+        
+<style>
+* { background-color:#C0DEED;}
+
+#sky {
+    position:fixed;
+    top:0px;left:0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    background-color:red;
+    background: url(clouds.png) center top repeat-x;
+    padding-top:300px;
+    padding-bottom:10px;
+}
+
+.clouds{
+    position: absolute;
+    top:100px;
+    height: 400px;
+    right: 0;
+    left: -1025px;
+    width: 130%;
+    background-image: url(https://ionagael.github.io/CNIT132A/images/clouds1.png);
+    background-repeat: repeat-x;
+    animation: clouds 50s linear infinite;
+}
+
+.center{
+    text-align:center;
+    height: 400px;
+}
+
+@keyframes clouds{
+  100%{
+    transform: translateX(2000px);
+  }
+}
+
+.airplane{
+  top: 600px;
+  left:40%;
+  position: absolute;
+  z-index: 1;
+}
+  
+@keyframes rolling { 
+   0% { left: -50px; top: 50px; }
+   50% { left: calc(100% - 300px); top: 50px; }
+   100% { left: calc(50% - 50px); top: 50px; }
+}
+    
+#field { height: 150px;
+         position: relative; 
+        width: 300px;
+        animation: rolling 10s linear forwards; 
+        background-color: transparent;
+    }
+    
+#banner { background-color: transparent;
+        text-align: center;
+		height: 150px; 
+		width: 300px;
+		position: absolute; 
+    font-size: 30px;
+    }
+
+@keyframes showing {
+   from { visibility: hidden; }
+   to    { visibility: visible; }
+}
+
+
+         
+            
+        </style>
+        
+        
+        
 </head>
 
 
@@ -29,17 +109,37 @@
 
 <body>
 
+<header>
+<div class="center">
+<h1>    HighRates Airlines</h1>
+    <div>Click on the plane to return to main site</div>
+    </div>
+   
+    </header>
 
         
    <main>
-  <div id="sky">
 
-    <img src="plane.png" alt="cartoon airplane">
 
-  </div> 
+  
+  
+   <div class="sky">
+    <div class="clouds"></div>
+
+    <div class="airplane"><a href="https://ionagael.github.io/CNIT132A/Assignments">
+      <img src="https://ionagael.github.io/CNIT132A/images/plane1.png"></a>
+      
+    </div>
+
+  </div>
+                   <div id="field">
+<div id="banner">FLY WITH US, WE ARE SAFE</div>
+
+</div>
 
     </main>
-    
 
 </body>
+    
+    
 </html>
