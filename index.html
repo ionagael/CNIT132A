@@ -3,11 +3,9 @@
 
     <head>
 
-        <title>Philip Burkart CNIT 132A Home</title>
+        <title>Philip Burkart CNIT 132A HTML and CSS home page</title>
+        <meta name="description" content="HTML, CSS, web developer home page">
         <meta charset="utf-8">
-        <meta name="description" content="This is the home page. ">
-	    
-
 	
 	
 	  <!-- Google tag (gtag.js) -->
@@ -152,19 +150,6 @@ nav {
 }
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: blue;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 footer.bottom {
 
     grid-area: footer;
@@ -181,11 +166,6 @@ footer.bottom {
 	
 }
 
-      .page-layout {
-         display: grid; 
-         grid-template-columns: 1fr 1fr; 
-         grid-template-rows: 50vh 50vh; 
-      }
 
 	
 	
@@ -201,14 +181,43 @@ footer.bottom {
 	
 
  
-	 footer img {
-		 float:left; 
-		 margin: 0 5px 5px 0;
-	}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: blue;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+     .content {max-width: 600px; margin: 10px auto; }
+
+     .drop { float: left;
+              shape-outside: url(https://ionagael.github.io/CNIT132A/images/house.png); 
+         shape-margin: 10px;
+           }
+
+    
+    
     h1 {
   text-align: center;
 }
-   
+    
+    p {
+        color:black;
+    }
+
+    
 </style>
 </head>
 
@@ -218,10 +227,10 @@ footer.bottom {
     <!-- top navigation bar -->
 
 <div class="topnav" id="myTopnav">
-  <a href="https://ionagael.github.io/CNIT132A/" class="active"> Home</a>
+  <a href="https://ionagael.github.io/CNIT132A/" > Home</a>
          <a href="https://ionagael.github.io/CNIT132A/Contact">Contact</a>     
 
-  <a href ="https://ionagael.github.io/CNIT132A/Assignments">Assignments</a>
+  <a href ="https://ionagael.github.io/CNIT132A/Assignments" class="active">Assignments</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
        
@@ -230,20 +239,19 @@ footer.bottom {
 </nav>
 
         
-    <main>
-  
-	    
-<h1>Philip Burkart CNIT 132A HTML and CSS</h1>
-	    
-	    	<div class="content">
-   <img src="https://ionagael.github.io/CNIT132A/images/web_design.jpg" alt="website layout" class="drop">
+   <main>
+      	 <h1>Philip Burkart CNIT 132A HTML and CSS</h1>
 
+<div class="content">
+   <img src="https://ionagael.github.io/CNIT132A/images/web_design.jpg" alt="web developer design sketch" class="drop">
+ </div> 
+<div class="content">	   
 <p>This website offers different kinds of HTML and CSS techniques to improve your abilities. Click on the following
 	hyperlink to see all the different techniques for the best possible <a  href="https://ionagael.github.io/CNIT132A/Assignments">front-end web development</a>.</p>
 </div>
 
-</main>
-    <footer class="bottom">  
+    </main>
+    <footer class=bottom>  
   <h2>Copyright &copy; 2022</h2></footer>
     
                <script>
