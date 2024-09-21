@@ -12,7 +12,6 @@
     grid-template-areas: "nav" "main" "footer";
     grid-template-rows: 55px 1fr 80px;
 	background-color: #DEB887; 
-	color: #A52A2A; 
 
 }
 
@@ -20,8 +19,4 @@ main {
     background-color: #DEB887;
     grid-area: main;
 	margin-left:27px;
-}
-
-h3 {
-    color: black;
 }
