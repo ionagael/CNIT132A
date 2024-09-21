@@ -131,18 +131,7 @@
 /* primary nav */
    
 
-   
-html, body {
-    margin: 0;
-    height: 100%;
-}
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav" "main" "footer";
-    grid-template-rows: 55px 1fr 80px;
-	background-color: #DEB887; 
-}
+
 nav {
 
     grid-area: nav;
@@ -171,12 +160,17 @@ footer.bottom {
 	     padding: 3px 0; 
 	     text-align:center; 
 	     background-color: blue; 
+	     color:white; 
 	     font-size: 0.9rem; 
-	color: white;
 	
 	
 	
 }
+
+	footer.bottom a {
+            color: yellow; /* Changed hyperlink color to yellow for clear visibility */
+            text-decoration: underline;
+        }
 
       .page-layout {
          display: grid; 
