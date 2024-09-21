@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    flex: 0 0 55px; /* Fixed height for the nav */
+    flex: 0 0 auto; /* Adjusts to content height */
 }
 
 main {
@@ -22,7 +22,7 @@ main {
 }
 
 footer {
-    flex: 0 0 80px; /* Fixed height for the footer */
+    flex: 0 0 auto; /* Adjusts to content height */
     width: 100%; 
     margin: 10px auto; /* Adjusted for spacing */
     padding: 10px 0; /* Increased padding for extra blue space */
