@@ -263,6 +263,13 @@ footer.bottom {
 	            <li><a href="https://github.com/" target="_blank">Github</a>: this is a great reference for hosting your temporary websties.</li>
     </ul>
 
+<div class="grid-item">
+   <img src="https://ionagael.github.io/CNIT132A/images/espresso.jpg" alt="web developer design sketch" class="drop" style="width: 300px; height: auto;">	  
+   <br>
+   <p>I had a blast at this event. </p>
+</div>
+
+
     </main>
 
 <footer class="bottom">  
