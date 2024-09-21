@@ -1,14 +1,24 @@
+
+main {
+    flex: 1; /* This makes the main area expand to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically if needed */
+    align-items: center; /* Center content horizontally if needed */
+}
+
 html, body {
     margin: 0;
     height: 100%;
 }
 
 body {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer";
     grid-template-rows: 55px 1fr 80px;
     background-color: #DEB887; 
+        display: flex;
+    flex-direction: column;
 }
 
 footer {
