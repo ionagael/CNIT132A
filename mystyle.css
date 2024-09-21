@@ -1,33 +1,32 @@
-
-  html, body {
+html, body {
     margin: 0;
     height: 100%;
 }
 
-
-
-  body {
+body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer";
     grid-template-rows: 55px 1fr 80px;
-	background-color: #DEB887; 
-
+    background-color: #DEB887; 
 }
 
-
 footer {
-
     grid-area: footer;
-	
-	     width: 100%; 
-	     margin: 0px auto; 
-	     padding: 3px 0; 
-	     text-align:center; 
-	     background-color: #964B00; 
-	     color:white; 
-	     font-size: 0.9rem; 
-	
-	
-	
+    width: 100%; 
+    margin: 10px auto; /* Adjusted for spacing */
+    padding: 10px 0; /* Increased padding for extra blue space */
+    text-align: center; 
+    background-color: blue; /* Changed to blue for contrast */
+    color: white; 
+    font-size: 0.9rem; 
+}
+
+footer a {
+    color: yellow; /* Changed hyperlink color to yellow for clear visibility */
+    text-decoration: underline;
+}
+
+footer h3 {
+    margin-bottom: 10px; /* Added margin below the email address */
 }
