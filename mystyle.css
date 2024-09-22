@@ -13,6 +13,15 @@ nav {
     flex: 0 0 auto; /* Adjust to content height */
 }
 
+        /* Header positioning */
+        h1 {
+            text-align: center;
+            position: relative;
+            margin-top: 0;
+            padding-top: 10px;
+        }
+
+
 main {
     flex: 1; /* This makes the main area expand to take up the remaining space */
     display: flex;
