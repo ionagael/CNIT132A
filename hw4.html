@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Lincoln School. Our dedicated staff fosters a nurturing environment where every student achieves their full potential through engaging and personalized education.">
+    <meta name="description" content="Welcome to Lincoln School. Our  staff will make every student achieves their dreams.">
     <meta name="keywords" content="School, Education, Learning, Lincoln School">
     <meta name="author" content="Lincoln School">
     <title>Lincoln School - A Place for Learning and Growth</title>
@@ -11,17 +11,19 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa; /* Light cyan background color */
+            background-color: #e0f7fa; 
             background-image: url('https://ionagael.github.io/CNIT132A/images/student.jpg');
             background-repeat: no-repeat;
             background-position: top right; 
-            background-size: cover; 
+            background-size: contain; 
+            min-height: 100vh; 
         }
 
         .container {
             position: relative;
             text-align: center; 
             padding: 20px;
+            z-index: 1; 
         }
 
         h1 {
@@ -50,20 +52,34 @@
         }
 
         figcaption {
-            font-size: 14px; /* Caption font size */
-            color: #555; /* Caption text color */
-            text-align: center; /* Center the caption */
+            font-size: 14px; 
+            color: #555; 
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0; 
+            text-align: center; 
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: blue; 
         }
     </style>
 </head>
 <body>
     <div class="container">
-
-    <ul>
-        <li><a href="https://ionagael.github.io/CNIT132A/index.html" target="_blank">Home</a>: Take me Home!</li>
-        <li><a href="https://ionagael.github.io/CNIT132A/Assignments.html" target="_blank">Assignments</a>: Take me back to the Assignments page!</li>
-        <li><a href="https://ionagael.github.io/CNIT132A/Contact.html" target="_blank">Contact Page</a>: Take me to the Contacts page!</li>
-    </ul>
+        <ul>
+            <li><a href="https://ionagael.github.io/CNIT132A/index.html" target="_blank">Home</a>: Take me Home!</li>
+            <li><a href="https://ionagael.github.io/CNIT132A/Assignments.html" target="_blank">Assignments</a>: Take me back to the Assignments page!</li>
+            <li><a href="https://ionagael.github.io/CNIT132A/Contact.html" target="_blank">Contact Page</a>: Take me to the Contacts page!</li>
+        </ul>
         
         <h1>Lincoln School</h1>
         <p>Welcome to Lincoln School. Our dedicated staff fosters a nurturing environment where every student achieves their full potential through engaging and personalized education.</p>
