@@ -5,68 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philip Burkart CNIT-132</title>
-	     <meta name="description" content="HTML, CSS, web developer home page">
-	        <!-- Site created by Phil Burkart on September 28 2024 -->
+    <meta name="description" content="HTML, CSS, web developer home page">
+    <!-- Site created by Phil Burkart on September 28 2024 -->
     <style>
-        h1 {
-            text-align: center;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
         }
 
-	        .centered-image {
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            max-width: 1200px;
+            width: 100%;
+            min-height: 100vh;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #f7b731;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .centered-image {
             display: block;
-            margin: 20px auto; 
-            width: 300px; 
-            height: auto; 
-			  padding: 15px; 
+            margin: 20px auto;
+            width: 300px;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
-    <h1>Philip Burkart CNIT-132</h1>
-
-        <img src="https://github.com/ionagael/CNIT132A/blob/main/images/oldboat.gif?raw=true" alt="old boat">   
- 
-    <ul>
-        <li><a href="https://ionagael.github.io/CNIT132A/miniproject1.html">Mini Project</a>: this is the Mini Project Homepage.</li>
-        <li><a href="https://ionagael.github.io/CNIT132A/index.html" >Home</a>: this is the actual homepage for this website.</li>
-        <li><a href="https://ionagael.github.io/CNIT132A/Assignments.html">Assignments</a>: this is where all my homework assignments will reside.</li>
-        <li><a href="https://ionagael.github.io/CNIT132A/AssignmentsMeetup.html">Meetup Report</a>: this is my meetup report.</li>
-	            <li><a href="https://ionagael.github.io/CNIT132A/miniproject2.html">Mini Project 2</a>: this is mini project 2.</li>
-        <li><a href="https://ionagael.github.io/CNIT132A/Contact.html">Contact Page</a>: this is my contact page.</li>
-        <li><a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the_turn_of_the_century" >The Turn of the Century</a>: this is a brief history of web development.</li>
- 
-    </ul>
-
-    <p>My name is Philip Burkart. I lived in China for 6 years. While in China, I completed a degree in teaching Mandarin. After that, I moved back to America and joined the National Guard. I eventually became a Green Beret, which was my life for 5 years. I currently work in software sales. I own 5 properties, one of which I am converting into a small coffee shop.</p>
-    <p>I'm attending this class for a couple of reasons. I like to build things. Second, I'm trying to create a back-up skill for myself in case I ever want to change careers.</p>
-
-    <hr>
-        <img src="https://github.com/ionagael/CNIT132A/blob/main/images/phil.PNG?raw=true" alt="Phil" style="width: 300px; height: auto" class="centered-image">
-    
-
-
-
-
-    
-    <section>
-    		      <h2>Favorite Websites</h2>
-    <ul>
-        <li><a href="https://validator.w3.org/nu/" target="_blank">Validator</a>: this is a great reference for checking your work after coding a webpage.</li>
-        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>: this is a great reference for learning all the basics of coding.</li>
-	            <li><a href="https://github.com/" target="_blank">Github</a>: this is a great reference for hosting your temporary websties.</li>
-	 <li> <a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the_turn_of_the_century" target="_blank">The Turn of the Century</a>: this is a brief history of web development.</li>    </ul>
-
-    </section>
-<hr>
-    <h2>Unordered List</h2>
-    <ul>
-        <li>Planning a web page</li>
-        <li>Studying the target audience</li>
-        <li>Following standards when coding</li>
-    </ul>
-
-
+    <div class="container">
+        <header>
+            <h1>Philip Burkart CNIT-132</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="https://ionagael.github.io/CNIT132A/miniproject1.html">Mini Project</a></li>
+                <li><a href="https://ionagael.github.io/CNIT132A/index.html">Home</a></li>
+                <li><a href="https://ionagael.github.io/CNIT132A/Assignments.html">Assignments</a></li>
+                <li><a href="https://ionagael.github.io/CNIT132A/AssignmentsMeetup.html">Meetup Report</a></li>
+                <li><a href="https://ionagael.github.io/CNIT132A/miniproject2.html">Mini Project 2</a></li>
+                <li><a href="https://ionagael.github.io/CNIT132A/Contact.html">Contact Page</a></li>
+                <li><a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the_turn_of_the_century">The Turn of the Century</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <p>My name is Philip Burkart. I lived in China for 6 years. While in China, I completed a degree in teaching Mandarin. After that, I moved back to America and joined the National Guard. I eventually became a Green Beret, which was my life for 5 years. I currently work in software sales. I own 5 properties, one of which I am converting into a small coffee shop.</p>
+                <p>I'm attending this class for a couple of reasons. I like to build things. Second, I'm trying to create a back-up skill for myself in case I ever want to change careers.</p>
+                <hr>
+                <img src="https://github.com/ionagael/CNIT132A/blob/main/images/phil.PNG?raw=true" alt="Phil" class="centered-image">
+                <h2>Favorite Websites</h2>
+                <ul>
+                    <li><a href="https://validator.w3.org/nu/" target="_blank">Validator</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://github.com/" target="_blank">Github</a></li>
+                    <li><a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the_turn_of_the_century" target="_blank">The Turn of the Century</a></li>
+                </ul>
+                <h2>Unordered List</h2>
+                <ul>
+                    <li>Planning a web page</li>
+                    <li>Studying the target audience</li>
+                    <li>Following standards when coding</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Philip Burkart</p>
+        </footer>
+    </div>
 </body>
 
 </html>
